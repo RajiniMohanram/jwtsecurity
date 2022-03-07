@@ -2,6 +2,9 @@
 
 Points to note:
 <ul>
-  <li>Lombok used to avoid boilerplate code like getters, setters, constructors and logger. Advised to refer related document to add lombok in your IDE.</li>
-  <li>AppUserDao can be replaced by Data JPA with related db table.</li>
+  <li>Run the project</li>
+  <li>Open POSTMAN or use cUrl</li>
+  <li>POST request to http://localhost:8080/authenticate with username (erik) and password (magneto). Refer AppUserRepo for more credential</li>
+  <li>Server return the token, copy the token</li>
+  <li>In POSTMAN/cUrl, GET request "http://localhost:8080/products/all" with header "Authorization":copied token</li>
 </ul>
